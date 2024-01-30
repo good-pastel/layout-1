@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "ambleregular";
+  src: url("font/amble-regular-webfont.woff2") format("woff2"),
+    url("font/amble-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "ambleregular", serif;
+}
+
+/* header */
+header {
+  top: 0;
+  left: 0;
+  margin: auto;
+  padding: 10px;
+  width: calc(100vw - 5vw);
+  height: 10vh;
+  position: sticky;
+  z-index: 9999;
+  background-color: #384e78;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+header .foto img {
+  max-height: 8vh;
+}
+header .list ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .list {
+  width: 50vw;
+}
+header .list ul li {
+  list-style-type: none;
+}
+
+header .list ul li a {
+  color: #fdfbfb;
+  text-decoration: none;
+}
+section {
+  margin: auto;
+  width: calc(100vw - 5vw);
+  font-size: 0.9rem;
+}
+/* background */
+section {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+section .section-1 .bg h1 {
+  height: 50vh;
+  background: url("img/background.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  line-height: 50vh;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 5px black;
+}
+/* content */
+section h2 {
+  margin: 10px;
+  padding: 10px;
+}
+.container {
+  width: calc(100vw - 5vw);
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-1 .nav-1 ul li,
+.container-3 .nav-2 ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.container-1 .nav-1 ul li a,
+.container-3 .nav-2 ul li a {
+  text-decoration: none;
+}
+.container-1,
+.container-3 {
+  flex: 1;
+  text-align: center;
+}
+.container-2 {
+  flex: 2;
+}
+.container-1,
+.container-2,
+.container-3 {
+  margin: 10px;
+  padding: 10px;
+}
+footer {
+  width: calc(100vw - 9vw);
+  background-color: #384e78;
+  margin: auto;
+  padding: 10px;
+}
+.footer p {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #fff;
+}
+@media only screen and (max-width: 960px) {
+  .container {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .container-1,
+  .container-3 {
+    text-align: left;
+  }
+}
