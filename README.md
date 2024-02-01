@@ -1,4 +1,4 @@
-# Layout - 1
+# Layout - 1 CSS - Flexbox
 
 > [[layout - 1](https://good-pastel.github.io/layout-1)]
 
@@ -24,7 +24,7 @@
 
 ## Description
 
-Simple Website Layout (1)
+Web Layout dengan CSS - Flex (1)
 
 <p>&copy Good Pastel. 2024</p>
 
